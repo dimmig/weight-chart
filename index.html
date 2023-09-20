@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script>
+          const ctx = document.getElementById('myChart');
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['31.08', '01.09', '04.09', '05.09', '07.09', '08.09', "11.09", "12.09", "14.09", "15.09", "18.09", "19.09"],
+                    datasets: [{
+                    label: 'Weight',
+                    data: [68.1, 68.3, 68.8, 69.0, 69.2, 70.3, 69.6, 69.6, 70.1, 70.3, 69.6, 70.9],
+                    borderWidth: 3,
+            
+                    }]
+                },   
+            });
+      </script>
+</body>
+</html>
